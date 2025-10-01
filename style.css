@@ -1,0 +1,42 @@
+footer a {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+footer a i {
+  pointer-events: none;
+  /* Klick bleibt auf dem <a>, nicht auf dem Icon */
+}
+
+footer a::after {
+  content: none !important;
+  /* Unterdrückt alles automatisch generierte */
+}
+
+/* Dunkle Bereiche auf benutzerdefinierte Farbe ändern */
+.bg-dark {
+  background-color: #42536E !important;
+}
+
+/* Optional: Buttons anpassen, damit sie zum neuen Hintergrund passen */
+.btn-dark {
+  background-color: #42536E !important;
+  border-color: #42536E !important;
+}
+
+.btn-dark:hover {
+  background-color: #34445b !important;
+  border-color: #34445b !important;
+}
+
+.timeline-img {
+  max-width: 600px;
+  /* Bild wird nicht größer als 600px */
+  width: 100%;
+  /* skaliert responsiv mit */
+  margin: 0 auto;
+  /* zentriert das Bild horizontal */
+  display: block;
+  /* nötig für margin:auto */
+}
